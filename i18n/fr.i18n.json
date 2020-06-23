@@ -1,0 +1,78 @@
+{
+  "_locale": "fr-fr",
+  "_namespace": "common",
+  "language": {
+    "enUS": "Anglais - U.S.",
+    "esES": "Espagnol - SP",
+    "frFr": "Francais - FR",
+    "Language": "Language"
+  },
+
+  "header": {
+    "openExternalLink": "Click here to Open all the external links in a page",
+    "externalLink": "External Links"
+  },
+  "notFound": "ውይይይ፣ የከፈቱት ገጽ አልተገኘም።",
+  "titles": {
+    "addreference": "Add Reference",
+    "referenceDisplaced": "References displayed",
+    "feedback": "Feedback",
+    "source": "Source",
+    "usersfeedback": "Users Feedback",
+    "notifications": "Notifications",
+    "bookmarks": "Bookmarks"
+  },
+  "accounts": {
+    "userName": "Nom",
+    "Register": "Enregistre-moi",
+    "Login": "Se Connecter",
+    "Logout": "Deconnection",
+    "Password": "Mot de Passe",
+    "Email": "Addresse Email",
+    "Gender": "Gender",
+    "dashboard": "Dashboard",
+    "notlogedIn": "You are not Logged in"
+  },
+  "manage": {
+    "Under": "የሚገኘው",
+    "accounts": "compte",
+    "courses": "coursos",
+    "unit": "unito",
+    "topics": "topicos",
+    "resources": "Resourcos",
+    "manage": "አስተዳድር"
+  },
+  "actions": {
+    "delete": "eraser",
+    "add": "ajouter",
+    "new": "nouveau",
+    "approve": "approver",
+    "suspend": "suspender",
+    "ChangeRoles": "Changer Roles",
+    "edit": "editer",
+    "save": "Sauver",
+    "close": "Closer",
+    "yes": "Oui",
+    "no": "No"
+  },
+  "message": {
+    "success": "",
+    "error": "",
+    "warn": ""
+  },
+  "sidenav": {
+    "dashboard": "ዳሽቦርድ",
+    "accounts": "ሒሳብ መዝገብ",
+    "courses": "ክፍሎች",
+    "alltopics": "ሁሉም ምዕራፎች",
+    "resourceLibrary": "Resource Library",
+    "externalLinks": "External Links",
+    "feedback": "ግብረ መልስ",
+    "setup": "Set Up",
+    "changeSlides": "Change Slides",
+    "updates": "Updates",
+    "subjects": "Subjects",
+    "stats": "Statistics",
+    "backup": "Backuped"
+  }
+}
