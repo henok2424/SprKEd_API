@@ -12,13 +12,6 @@ const resolvers = {
     },
   },
 
-  // Query: {
-  //   resolutions(obj, args, { userId }) {
-  //     return Resolutions.find({
-  //       userId
-  //     }).fetch();
-  //   }
-  // },
   Query: {
     getCourses(root, args, { user })  {
       return _Courses.find({

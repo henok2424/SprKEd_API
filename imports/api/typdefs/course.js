@@ -10,7 +10,8 @@ const courseDefs = gql`
 
   type Course {
     _id: String
-    name: String    
+    name: String
+    
     createdAt: String
     createdBy: String
     createdByName: String

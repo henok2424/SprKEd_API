@@ -8,6 +8,7 @@ const resourceDefs = gql`
     getResourcesByTopicId(topicId: String): [File]
     getResource(id: String!): File
   }
+  
   type File {
     _id: String
     path: String

@@ -16,7 +16,8 @@ const topicResolvers = {
       return Resource.find({ topicId: topic.topicId })
     },
   },
-
+  // add more mutations here
+ 
 }
 
 export default topicResolvers
