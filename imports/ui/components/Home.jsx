@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { PropTypes } from 'prop-types';
 import React, { Component, Fragment } from 'react';
 import { Session } from 'meteor/session';
-import M from 'materialize-css';
+// import M from 'materialize-css';
 import { withTracker } from 'meteor/react-meteor-data';
 import { _Courses } from '../../api/courses/courses';
 import { _Units } from '../../api/units/units';
@@ -41,7 +41,7 @@ export class Home extends Component {
         <ThemeContext.Consumer>
           {({ state }) => (
             <Fragment>
-              <ImgSlider  />
+           <div style={{zIndex:-1}}> <ImgSlider  /> </div>   
               <div className="container ">
                 <div className="row ">
                   <div className="input-field col s12">
@@ -88,7 +88,7 @@ export default withTracker(() => {
     unit: _Units.find().fetch(),
     courses: _Courses
       .find(
-        { 'details.language': Session.get('language') }, {sort:{name:1}},
+        { 'details.language': Session.get('language') }, {sort:{code:1}},
         {
           fields: {
             name: 1,

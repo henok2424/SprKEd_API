@@ -20,15 +20,12 @@ Schema.details = new SimpleSchema({
     type: String,
     optional: true,
   },
-  language: {type: String,
-    optional: true,
-  }
-    
+  language: String,
 });
 
 Schema.Course = new SimpleSchema({
   name: String,
-  code: String,
+  code: Match.Integer,
   details: Schema.details,
   createdAt: Date,
   createdBy: String,

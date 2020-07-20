@@ -35,6 +35,7 @@ class UserInfo extends Component {
     oldPassword: '',
     passwordConfirm: '',
     error: '',
+    checked: true,
   };
 
   handleOldPasswordChange = e => {
@@ -79,6 +80,7 @@ class UserInfo extends Component {
 
   render() {
     const user = Meteor.user();
+    
     const {
       isVisible,
       isOpen,
@@ -89,8 +91,10 @@ class UserInfo extends Component {
       oldPassword,
       passwordConfirm,
       error,
+      checked,
     } = this.state; // eslint-disable-line
     return (
+      
       <ThemeContext.Consumer>
         {({ state }) => (
           <div>
@@ -161,7 +165,8 @@ class UserInfo extends Component {
                       'content-manager',
                     ]) ? (
                       <button className="btn teal" onClick={takeToDashboard}>
-                        Dashboard
+                        
+                         <T>common.accounts.Dashboard</T>
                       </button>
                     ) : (
                       <span />
@@ -182,14 +187,14 @@ class UserInfo extends Component {
               )}
               <div className="switch">
                 <label>
-                  Day Mode
+                    <T>common.accounts.daymode</T>
                   <input
-                    type="checkbox"
+                    type="checkbox" 
                     onChange={this.props.handleNightMode}
                     checked={this.props.checked}
                   />
                   <span className="lever" />
-                  Night Mode
+                         <T>common.accounts.nightmode</T>
                 </label>
               </div>
             </ul>
@@ -201,7 +206,7 @@ class UserInfo extends Component {
 }
 UserInfo.propTypes = {
   handleNightMode: PropTypes.func.isRequired,
-  checked: PropTypes.bool.isRequired,
+  // checked: PropTypes.bool.isRequired,
 };
 
 export default UserInfo;

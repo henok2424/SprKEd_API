@@ -376,7 +376,7 @@ export class EditUnits extends Component {
                         onClick={e => this.backToUnits(programId, courseId, e)}
                       >
                         <a href={''} className="white-text">
-                          {` ${Session.get('unit_title') || 'Back'}`}
+                          {` ${Session.get('sub_unit_title') || 'Back'}`}
                         </a>
                       </button>
                     </div>

@@ -1,10 +1,10 @@
 {
-  "_locale": "en-us",
+  "_locale": "en-US",
   "_namespace": "common",
   "language": {
     "enUS": "English - U.S.",
-    "esES": "Spanish - SP",
-    "frFr": "French - FR",
+    "esES": " Amharic ",
+    "frFr": " Oromifa",
     "Language": "Language"
   },
   "header": {
@@ -23,7 +23,7 @@
   },
   "accounts": {
     "userName": "User name",
-    "Subjects": "Subjects",
+    "Subjects": "Grades",
     "Register": "Register",
     "Login": "LogIn",
     "Logout": "Logout",
@@ -31,10 +31,14 @@
     "EmailField": "Email Address",
     "name": "name",
     "Role": "Role",
+    "Phone": "Mobile",
+    "Useris": "User is:",
     "Email": "Email",
     "Gender": "Gender",
-    "dashboard": "Dashboard",
-    "notlogedIn": "You are not Logged in"
+    "Dashboard": "Dashboard",
+    "notlogedIn": "You are not Logged in",
+    "daymode": "Day Mode",
+   	"nightmode": "Night Mode"
   },
   "manage": {
     "Under": "Under",

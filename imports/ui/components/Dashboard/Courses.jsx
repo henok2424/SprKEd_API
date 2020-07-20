@@ -166,6 +166,7 @@ export class Courses extends Component {
       case 'add':
         course = target.course.value;
         courseCode = target.courseCode.value;
+        courseCode = parseInt(courseCode) ;
         // language = target.language.value;
         details = { language };
         const reference = config.isHighSchool ? 'subject' : 'course';
@@ -212,6 +213,7 @@ export class Courses extends Component {
       case 'edit':
         course = target.course.value;
         courseCode = target.courseCode.value;
+        courseCode = parseInt(courseCode) ;
         Meteor.call(
           'course.edit',
           modalIdentifier,
@@ -525,9 +527,9 @@ export class Courses extends Component {
                     name="course"
                   />
                   <input
-                    placeholder={`${newTitle} Code`}
+                    placeholder={`${newTitle} Code , Helps to Order Grades`}
                     defaultValue={code}
-                    type="text"
+                    type="number"
                     className="validate clear"
                     style={{ color: state.isDark ? '#F5FAF8' : '#000000' }}
                     required
@@ -536,7 +538,7 @@ export class Courses extends Component {
 
                   <div className="input-field col s12">
                     <select
-                
+                      required
                       className="browser-default"
                       onChange={e =>
                         this.setState({ language: e.target.value })
@@ -707,10 +709,10 @@ export default withTracker(() => {
  
   return {
     courses: _Courses
-      .find({ 'details.language': Session.get('language') } , {sort:{name:1}})
+      .find({ 'details.language': Session.get('language') } , {sort:{code: 1}})
       .fetch(),
       allCourses: _Courses
-      .find({ },  {sort:{name:1}})
+      .find({ },  {sort:{code: 1 }})
       .fetch(),
     titles: Titles.findOne({}),
   };

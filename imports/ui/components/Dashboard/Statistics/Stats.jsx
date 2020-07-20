@@ -20,9 +20,9 @@ export function StatsView({
   return (
     <div className="col m9 s11">
       <StatCard count={users} type={'users'} />
-      <StatCard count={courses} type={'courses'} />
-      <StatCard count={units} type={'units'} />
-      <StatCard count={topics} type={'topics'} />
+      <StatCard count={courses} type={'Grades'} />
+      <StatCard count={units} type={'Subjects'} />
+      <StatCard count={topics} type={'Units'} />
       <StatCard count={resources} type={'resources'} />
       <StatCard count={references} type={'references'} />
     </div>

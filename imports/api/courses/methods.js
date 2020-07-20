@@ -8,7 +8,7 @@ Meteor.methods({
   'course.add': function courseAdd(id, course, courseCode, details) {
     check(id, String);
     check(course, String);
-    check(courseCode, String);
+    check(courseCode, Match.Integer);
     check(details, Object);
     if (Roles.userIsInRole(this.userId, ['admin', 'content-manager'])) {
       _Courses.insert({
@@ -27,7 +27,7 @@ Meteor.methods({
   'course.edit'(id, course, courseCode, language, ownerId) {
     check(id, String);
     check(course, String);
-    check(courseCode, String);
+    check(courseCode, Match.Integer);
     check(language, String);
     check(ownerId, String);
 
